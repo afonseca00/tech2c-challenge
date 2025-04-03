@@ -1,0 +1,39 @@
+/* Body background */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* General card style */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header */
+.card-header {
+  background-color: #239F94;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 12px;
+}
+
+/* Card body */
+.card-body {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+/* Button style */
+.btn-primary {
+  background-color: #239F94;
+  border-color: #239F94;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1e8e7e;
+  border-color: #1e8e7e;
+}

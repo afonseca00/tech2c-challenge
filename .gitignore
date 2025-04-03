@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# .env files
+.env
+
+# VSCode settings
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# Docker
+docker-compose.override.yml
+
+# Temporary files
+uploads/
+dist/

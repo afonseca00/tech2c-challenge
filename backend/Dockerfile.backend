@@ -1,0 +1,18 @@
+FROM node:18
+
+WORKDIR /app
+
+# Copy only dependency files first
+COPY backend/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the code
+COPY backend/ .
+
+# Expose the server port
+EXPOSE 3000
+
+# Using npx to ensure you find ts-node-dev even if it is devDependency
+CMD ["npx", "ts-node-dev", "--respawn", "--transpile-only", "src/index.ts"]

@@ -1,0 +1,141 @@
+/* Ensuring the body takes up the full height of the window */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* The container will take up the full available height */
+.container-fluid {
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Background color of the site */
+body {
+  background-color: #ffffff;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title with Get2C branding color */
+h2 {
+  color: #239F94;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Cards with Bootstrap classes */
+.card {
+  width: 100%;
+  /*max-width: 800px;*/
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+/* Styling for card headers */
+.card-header {
+  background-color: #239F94;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Styling for card body */
+.card-body {
+  background-color: white;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #239F94;
+  border-color: #239F94;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background-color: #1e8e7e;
+  border-color: #1e8e7e;
+}
+
+/* Optional: styling for form inputs */
+input[type="file"] {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #239F94;
+}
+
+/* Styling for the notification message */
+.alert-info {
+  background-color: #e0f7fa;
+  color: #00796b;
+  border: 1px solid #00796b;
+}
+
+/* Adding spacing between sections */
+.mt-4 {
+  margin-top: 20px;
+}
+
+/* Styling for loading message */
+.loading-message {
+  font-size: 1.2rem;
+  color: #239F94;
+}
+
+/* Responsiveness for smaller screens (e.g., mobile devices) */
+@media (max-width: 1000px) {
+  .container-fluid {
+    padding-top: 10px;
+  }
+
+  /* Ensure the cards don't overlap and are stacked */
+  .card {
+    margin-bottom: 15px;
+  }
+
+  /* Making sure the button is centered */
+  .btn-primary {
+    width: 100%;
+  }
+
+  /* Stack the charts on smaller screens */
+  .row {
+    display: block; /* Change from row to block so they stack */
+  }
+
+  .col-md-6 {
+    width: 100% !important; /* Force the columns to be 100% on small screens */
+    margin-bottom: 20px;
+  }
+
+  /* Ensure the "Top 5 Most Efficient Companies" chart occupies the full width */
+  .col-12 {
+    width: 100% !important; /* Force this column to take up the full width */
+  }
+}
