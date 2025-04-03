@@ -28,7 +28,7 @@ Before setting up the project, ensure that you have the following installed:
 1. **Clone the repository**:
    - Clone the project from GitHub:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/afonseca00/tech2c-challenge.git
    ```
    
 2. **Start the backend and MongoDB with Docker**:
@@ -58,12 +58,12 @@ Before setting up the project, ensure that you have the following installed:
 
 > ℹ️ If you encounter a "Permission denied" error when running `npm run dev` (especially on Mac or Linux), try running:
 
-bash```
+```bash
 chmod +x node_modules/.bin/*
 ```
 
 Then retry:
-bash```
+```bash
 npm run dev
 ```
 
